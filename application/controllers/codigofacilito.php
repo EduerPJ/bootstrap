@@ -7,7 +7,10 @@ class CodigoFacilito extends CI_Controller {
   }
 
   public function index() {
+    $this->load->library('Menu', array('Inicio', 'Contacto', 'Cursos'));
+
     $data = [
+      'mi_menu' => $this->menu->construirMenu(),
       'title' => 'Codigo Facilito',
       'firstname' => 'Eduer',
       'lastname' => 'Pallares Jiménez'
@@ -17,7 +20,9 @@ class CodigoFacilito extends CI_Controller {
   }
 
   public function soyExepcional() {
+    $this->load->library('Menu', array('Inicio', 'Contacto', 'Cursos'));
     $data = [
+      'mi_menu' => $this->menu->construirMenu(),
       'title' => 'Codigo Facilito',
       'firstname' => 'Eduer',
       'lastname' => 'Pallares Jiménez'
