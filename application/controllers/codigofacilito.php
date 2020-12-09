@@ -3,6 +3,7 @@
 class CodigoFacilito extends CI_Controller {
   function __construct()  {
     parent::__construct();
+    $this->load->helper('mihelper');
   }
 
   public function index() {

@@ -1,1 +1,1 @@
-<h1>Soy Genial</h1>
+<h1><?= getNombre() ?></h1>

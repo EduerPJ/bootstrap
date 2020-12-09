@@ -4,7 +4,7 @@
       <?= $title ?>
     </div>
     <div class="col-sm">
-      <?= $firstname ?>
+      <?= $getNombre() ?>
     </div>
   </div>
   <div class="row">
