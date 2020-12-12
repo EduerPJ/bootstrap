@@ -30,25 +30,4 @@ class CodigoFacilito extends CI_Controller {
     $this->load->view('codigofacilito/soygenial', $data);
     $this->load->view('layouts/footer', $data);
   }
-
-  public function formulario(){
-    $data = [
-      'mi_menu' => $this->menu->construirMenu(),
-      'title' => 'Codigo Facilito',
-      'firstname' => 'Eduer',
-      'lastname' => 'Pallares Jiménez'
-    ];
-
-    $this->load->view('layouts/header', $data);
-    $this->load->view('codigofacilito/formulario', $data);
-    $this->load->view('layouts/footer', $data);
-  }
-
-  public function recibirDatos(){
-    $data = array(
-      'nombre' => $this->input->post('nombre'),
-      'videos' => $this->input->post('videos')
-    );
-    $this->codigofacilito_model->crearCurso($data);
-  }
 }

@@ -1,5 +1,5 @@
 <div class="container">
-  <?=form_open("/codigofacilito/recibirdatos")?>
+  <?=form_open("/cursos/recibirdatos")?>
 
   <?
     $nombre = [
@@ -23,6 +23,5 @@
   <br>
   <?= form_submit('', 'Enviar los datos')?>
   <br>
-
   <hr>
 </div>

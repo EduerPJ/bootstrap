@@ -11,4 +11,14 @@ class Codigofacilito_model extends CI_Model {
   {
     $this->db->insert('cursos', array('nombre_curso' => $data['nombre'], 'videos_curso' => $data['videos']));
   }
+
+  public function obtenerCursos() {
+    $query = $this->db->get('cursos');
+
+    if ($query->num_rows() > 0) {
+      return $query;
+    } else {
+      return false;
+    }
+  }
 }
