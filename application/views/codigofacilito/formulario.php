@@ -11,9 +11,6 @@
       'name' => 'videos',
       'placeholder' => 'Cantidad de videos',
     ];
-    $texto = [
-      'name' => 'descripción',
-    ];
   ?>
 
   <?= form_label('Nombre: ', 'nombre')?>
@@ -24,10 +21,7 @@
   <?= form_input($videos)?>
   <br>
   <br>
-  <?= form_label('Descriptción: ', 'descripcion')?>
-  <br>
-  <?= form_textarea('Descripción')?>
-  <br>
+  <?= form_submit('', 'Enviar los datos')?>
   <br>
 
   <hr>
