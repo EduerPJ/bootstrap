@@ -80,24 +80,15 @@ public function nuevo(){
 
   public function actualizar()
   {
-    $data = ['id' => $this->uri->segment(3)];
-    $data = [
-      'mi_menu' => $this->menu->construirMenu(),
-      'title' => 'Codigo Facilito',
-      'firstname' => 'Eduer',
-      'lastname' => 'Pallares Jiménez'
-    ];
-    $dato = [
+
+    $datos = [
       'nombre' => $this->input->post('nombre'),
       'videos' => $this->input->post('videos'),
       'id' => $this->uri->segment(3)
     ];
     $id = $this->uri->segment(3);
 
-    $this->codigofacilito_model->actualizarCurso($id, $dato);
-
-    $this->load->view('layouts/header', $data);
-    $this->load->view('cursos/actualizar', $data);
-    $this->load->view('layouts/footer', $data);
+    $this->codigofacilito_model->actualizarCurso($id, $datos);
+    redirect(base_url());
   }
 }
