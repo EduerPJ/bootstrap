@@ -22,6 +22,7 @@
   <br>
   <br>
   <?= form_submit('', 'Enviar los datos')?>
+  <?=form_close()?>
   <br>
   <hr>
 </div>
