@@ -10,26 +10,36 @@ class Cursos extends CI_Controller {
 public function index()
 {
   $data = [
+    'segmento' => $this->uri->segment(3),
     'mi_menu' => $this->menu->construirMenu(),
     'title' => 'Codigo Facilito',
     'firstname' => 'Eduer',
-    'lastname' => 'Pallares Jiménez',
-    'cursos' => $this->codigofacilito_model->obtenerCursos()
+    'lastname' => 'Pallares Jiménez'
   ];
+
+  if (!$data['segmento']) {
+    $data['cursos'] = $this->codigofacilito_model->obtenerCursos();
+  } else {
+    $data['cursos'] = $this->codigofacilito_model->obtenerCurso($data['segmento']);
+  }
+
 
   $this->load->view('layouts/header', $data);
   $this->load->view('cursos/cursos', $data);
   $this->load->view('layouts/footer', $data);
 
 }
-  public function nuevo(){
-    $data = [
-      'mi_menu' => $this->menu->construirMenu(),
-      'title' => 'Codigo Facilito',
-      'firstname' => 'Eduer',
-      'lastname' => 'Pallares Jiménez'
-    ];
+public function nuevo(){
+  $data = [
+    'mi_menu' => $this->menu->construirMenu(),
+    'title' => 'Codigo Facilito',
+    'firstname' => 'Eduer',
+    'lastname' => 'Pallares Jiménez'
+  ];
 
+    $this->load->view('layouts/header', $data);
+    $this->load->view('cursos/formulario', $data);
+    $this->load->view('layouts/footer', $data);
 
   }
 
