@@ -59,7 +59,7 @@ public function nuevo(){
     $this->load->view('layouts/footer', $data);
   }
 
-  public function editar(){
+  public function editar() {
     $data = [
       'mi_menu' => $this->menu->construirMenu(),
       'title' => 'Codigo Facilito',
@@ -71,6 +71,11 @@ public function nuevo(){
     $this->load->view('layouts/header', $data);
     $this->load->view('cursos/editar', $data);
     $this->load->view('layouts/footer', $data);
+  }
+
+  public function borrar() {
+    $id= $this->uri->segment(3);
+    $this->codigofacilito_model->borrarCurso($id);
   }
 
   public function actualizar()
