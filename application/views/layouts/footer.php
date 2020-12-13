@@ -1,4 +1,15 @@
-
+  <footer id="footer" class="pb-4 pt-4">
+    <div class="container">
+      <div class="row">
+        <div class="footer text-center col-12 col-lg"><a href="#">Preguntas frecuentes</a></div>
+        <div class="footer text-center col-12 col-lg"><a href="#">Términos y condiciones</a></div>
+        <div class="footer text-center col-12 col-lg"><a href="#">Contáctanos</a></div>
+        <div class="footer text-center col-12 col-lg"><a href="#">Privacidad</a></div>
+        <div class="footer text-center col-12 col-lg"><a href="#">Prensa</a></div>
+        <div class="footer text-center col-12 col-lg"><a href="#">PQR</a></div>
+      </div>
+    </div>
+  </footer>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

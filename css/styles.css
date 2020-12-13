@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  margin-top: 35;
+}
+.reto{
+  background: #1EDFCD ;
+  border: 1px solid #E3EEED;
+  height: 50px;
+}
+
+#footer {
+  background: #3C6997;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
