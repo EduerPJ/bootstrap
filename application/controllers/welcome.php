@@ -24,6 +24,11 @@ class Welcome extends CI_Controller {
 			'firstname'	=> 'Eduer',
 			'lastname' => 'Pallares'
 		];
+		$headers = $this->load->view('layouts/header.php', $data, true);
+		$footer = $this->load->view('layouts/footer.php', $data, true);
+
+		$data['headers'] = $headers;
+		$data['footer'] = $footer;
 		$this->load->view('welcome_message', $data);
 	}
 }
