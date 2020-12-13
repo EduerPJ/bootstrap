@@ -1,9 +1,7 @@
-      <div class="container-fluid">
         <div class="row">
-          <div class="col-sm">&copy;<?= $firstname . ' ' . $lastname ?></div>
+          <div class="col-sm">&copy; Eduer Pallares | 2020</div>
           <div class="col-sm">2020</div>
         </div>
-      </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
