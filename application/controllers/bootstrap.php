@@ -19,6 +19,7 @@ class Bootstrap extends CI_Controller {
       $data = [
         'headers' => $this->load->view('layouts/header', '', true),
         'footer' => $this->load->view('layouts/footer', '', true),
+        'speakers' => $this->load->view('bootstrap/speakers', '', true),
       ];
 
       $this->load->view('bootstrap/grilla', $data);
@@ -28,6 +29,7 @@ class Bootstrap extends CI_Controller {
       $data = [
         'headers' => $this->load->view('layouts/header', '', true),
         'footer' => $this->load->view('layouts/footer', '', true),
+        'speakers' => $this->load->view('bootstrap/speakers', '', true),
       ];
 
       $this->load->view('bootstrap/grillareto2', $data);
@@ -37,6 +39,7 @@ class Bootstrap extends CI_Controller {
       $data = [
         'headers' => $this->load->view('layouts/header', '', true),
         'footer' => $this->load->view('layouts/footer', '', true),
+        'speakers' => $this->load->view('bootstrap/speakers', '', true),
       ];
 
       $this->load->view('bootstrap/grillareto3', $data);
@@ -46,6 +49,17 @@ class Bootstrap extends CI_Controller {
     $data = [
       'headers' => $this->load->view('layouts/header', '', true),
       'footer' => $this->load->view('layouts/footer', '', true),
+      'speakers' => $this->load->view('bootstrap/speakers', '', true),
+    ];
+
+    $this->load->view('bootstrap/main', $data);
+  }
+
+  public function speakers() {
+    $data = [
+      'headers' => $this->load->view('layouts/header', '', true),
+      'speakers' => $this->load->view('bootstrap/speakers', '', true),
+      'footer' => $this->load->view('layouts/footer', '', true)
     ];
 
     $this->load->view('bootstrap/main', $data);

@@ -1,4 +1,4 @@
-<?=$headers?>
+  <?=$headers?>
 <!-- Main -->
 <main id="main" class="container-fluit">
   <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-pause="false">
@@ -35,6 +35,8 @@
       <span class="visually-hidden">Siguiente</span>
     </a>
   </div>
+
+  <?=$speakers?>
 </main>
 <!-- Fin Main -->
-<?=$footer?>
+  <?=$footer?>
