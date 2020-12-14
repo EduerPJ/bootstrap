@@ -1,3 +1,4 @@
+<!-- Footer -->
   <footer id="footer" class="pb-4 pt-4">
     <div class="container">
       <div class="row">
@@ -10,6 +11,7 @@
       </div>
     </div>
   </footer>
+  <!-- Fin Footer -->
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

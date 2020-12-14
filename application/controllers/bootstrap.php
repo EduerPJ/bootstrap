@@ -41,4 +41,13 @@ class Bootstrap extends CI_Controller {
 
       $this->load->view('bootstrap/grillareto3', $data);
   }
+
+  public function carrucel() {
+    $data = [
+      'headers' => $this->load->view('layouts/header', '', true),
+      'footer' => $this->load->view('layouts/footer', '', true),
+    ];
+
+    $this->load->view('bootstrap/main', $data);
+  }
 }
