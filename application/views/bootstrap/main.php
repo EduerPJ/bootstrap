@@ -18,8 +18,8 @@
             <div class="col-md-6 offset-md-6 text-center text-md-right">
               <h1>Eduer Developer</h1>
               <p class="d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsa repellendus dolor dolore sequi quas commodi rem assumenda qui veritatis, harum, quidem, a unde rerum cum odit. Voluptatem, accusantium ipsam.</p>
-              <a href="#">Ir a mi página</a>
-              <button class="btn btn-primary">Habláme</button>
+              <a class="btn btn-outline-light" href="#">Ir a mi página</a>
+              <button class="btn btn-eduer">Habláme</button>
             </div>
           </div>
         </div>

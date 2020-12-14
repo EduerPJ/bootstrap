@@ -49,3 +49,13 @@
 #carousel .overlay .overlay {
   height: 100%;
 }
+
+.btn-eduer {
+  background-color: #3C6997;
+  color: white;
+}
+
+.btn-eduer:hover {
+  background-color: #4284c7;
+  color: white;
+}
