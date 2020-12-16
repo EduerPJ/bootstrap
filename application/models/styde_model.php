@@ -6,11 +6,13 @@ class Styde_model extends CI_Model {
   protected $lastName;
   protected $nickname;
   protected $changedNickname = 0;
+  protected $age;
 
   function __construct()
   {
     parent::__construct();
     $this->load->database();
+    $this->load->helper('date');
   }
 
   public function getName()
@@ -45,7 +47,26 @@ class Styde_model extends CI_Model {
         'No puedes cambiar el nickname más de 2 veces'
       );
     }
-    $this->nickname = $nickname;
-    $this->changedNickname++;
+
+    if (strlen($nickname) >= 2 && $nickname
+    != $this->name && $nickname
+    != $this->lastName){
+
+      $this->nickname = $nickname;
+      $this->changedNickname++;
+    }
+  }
+
+  public function getAge()
+  {
+  $datestring = "%Y %m %d";
+  $time = time();
+
+    return mdate($datestring, $time);
+  }
+
+  public function setAGe($age)
+  {
+    $this->age = $age;
   }
 }

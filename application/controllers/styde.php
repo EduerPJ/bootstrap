@@ -17,6 +17,7 @@ class Styde extends CI_Controller {
     $data['name'] = $this->styde_model->getName();
     $data['nickname'] = $this->styde_model->getNickname();
     $data['footer'] = $this->load->view('layouts/footer', $datos, true);
+    $data['age'] = $this->styde_model->getAge();
     $this->load->view('styde/styde', $data);
   }
 }
